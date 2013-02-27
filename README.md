@@ -43,7 +43,7 @@ Once you have added the `data-imgsrc` attribute to placeholder elements and any 
 ```html
 <script src="data-imgsrc.js"></script>
 <script>
-	loadImgs();
+	imgUtil.loadImgs();
 </script>
 ```
 
@@ -53,7 +53,7 @@ Of course, this script is much more useful when combined with testing for certai
 <script src="data-imgsrc.js"></script>
 <script>
 	if (window.matchMedia && window.matchMedia("(min-width: 40em)").matches) {
-		loadImgs();
+		imgUtil.loadImgs();
 	}
 <script>
 ```
@@ -64,7 +64,7 @@ Alternatively, you might wish to load image enhancements above certain bandwidth
 <script src="data-imgsrc.js"></script>
 <script>
 	if (navigator.connection && navigator.connection.bandwidth >= 750) {
-		 loadImgs();
+		 imgUtil.loadImgs();
 	}
 <script>
 ```
